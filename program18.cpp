@@ -4,7 +4,7 @@ using namespace std;
 class Test1
 {
    public:
-   virtual void fun1()
+   virtual void fun1()    //virtual function 
    {
        cout<<"This is virtual function in base class"<<endl;
    }
@@ -24,7 +24,7 @@ class Test2: public Test1
 
 int main()
 {
-   Test1 *p,t1;
+   Test1 *p,t1;    // pointer of class Test1
    Test2 t2;
    p= &t2;
    p->fun1();
