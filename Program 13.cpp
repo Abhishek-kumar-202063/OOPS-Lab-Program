@@ -11,7 +11,7 @@ class India
     }
 };
 
-class Bihar:public India
+class Bihar:public India           // Class Bihar inherit India class 
 {
     public:
     void set_fun2()    {
@@ -19,7 +19,7 @@ class Bihar:public India
     }
 };
 
-class Champaran :public Bihar
+class Champaran :public Bihar     // Class champaran inherits Bihar class 
 {
     public:
     void set_fun3()
@@ -31,7 +31,7 @@ class Champaran :public Bihar
 
 int main()
 {
-    Champaran s;
+    Champaran s;    // object of class Champaran
     s.set_fun1();
     s.set_fun2();
     s.set_fun3();
