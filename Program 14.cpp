@@ -21,7 +21,7 @@ class Printer : public PowerDevice
 	    
 	}
 };
-class Scanner : public PowerDevice  
+class Scanner : public PowerDevice    // single inheritance
 {
     public:
 	Scanner() 
@@ -30,7 +30,7 @@ class Scanner : public PowerDevice
 	    
 	}
 };
-class Copies : public Printer,Scanner
+class Copies : public Printer,Scanner     // multiple inheritance 
 {
     public:
 	Copies() 
@@ -43,6 +43,5 @@ class Copies : public Printer,Scanner
 int main()
 {
     Copies C1;
-
     return 0;
 }
