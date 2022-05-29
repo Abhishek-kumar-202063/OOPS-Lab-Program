@@ -9,12 +9,12 @@ class Complex
     
     public:
     
-    Complex(int x,int y)
+    Complex(int x,int y)                     //constructor 
     {
        a=x;
        b=y;
     }
-     ~Complex()
+     ~Complex()                           // destructor 
     {
       cout<<"This is the destructor "; 
     }
@@ -28,7 +28,7 @@ class Complex
 
 int main()
 {
-    Complex Obj(10,15);
+    Complex Obj(10,15);                  //Creating object 
     
     Obj.display();
 
